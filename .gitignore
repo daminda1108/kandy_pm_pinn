@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files (too large for git)
+*.nc
+*.zarr/
+*.csv
+*.parquet
+data/raw/
+data/processed/
+data_drive/
+
+# Model checkpoints (too large for git)
+checkpoints/
+*.pt
+*.pth
+*.h5
+models/saved/
+
+# Results and outputs
+results/
+outputs/
+*.png
+*.jpg
+*.pdf
+!docs/*.png
+!docs/*.pdf
+
+# Logs
+logs/
+*.log
+wandb/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
