@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ## Author
 
-Daminda - Department of Environmental Sciences, University of Peradeniya
+Daminda Alahakoon - Department of Environmental Sciences, University of Peradeniya
 
 ## License
 
