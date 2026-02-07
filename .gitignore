@@ -38,20 +38,47 @@ ENV/
 
 # Jupyter Notebooks
 .ipynb_checkpoints
-*.ipynb
+*.ipynb_checkpoints/
 
 # Data Files (Large datasets - exclude from repository)
 data/raw/
 data/processed/
 data/final/*.csv
+data_drive/
 !data/final/sample_data.csv  # Keep sample only
 
 # NetCDF files (large)
 *.nc
+*.zarr/
+
+# Large data formats
+*.csv
+*.parquet
+!requirements.txt  # Keep requirements.txt
+
+# Model checkpoints (too large for git)
+checkpoints/
+*.pt
+*.pth
+*.h5
+*.ckpt
+models/saved/
+models/checkpoints/
+
+# Results and outputs
+results/
+outputs/
+*.png
+*.jpg
+*.pdf
+!docs/*.png
+!docs/*.pdf
+!outputs/figures/*.png  # Keep sample figures
 
 # Logs
 logs/
 *.log
+wandb/
 
 # Outputs (generated files)
 outputs/reports/*.txt
@@ -74,13 +101,6 @@ tmp/
 # OS-specific
 Thumbs.db
 .DS_Store
-
-# Model checkpoints (if PINN training added)
-models/checkpoints/
-*.h5
-*.pt
-*.pth
-*.ckpt
 
 # Large archives
 *.zip
