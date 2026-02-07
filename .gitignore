@@ -1,0 +1,88 @@
+# PINN PM2.5 Transfer Learning - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Data Files (Large datasets - exclude from repository)
+data/raw/
+data/processed/
+data/final/*.csv
+!data/final/sample_data.csv  # Keep sample only
+
+# NetCDF files (large)
+*.nc
+
+# Logs
+logs/
+*.log
+
+# Outputs (generated files)
+outputs/reports/*.txt
+outputs/reports/*.csv
+
+# API Keys and Credentials
+config.py
+!config_template.py  # Keep template
+.cdsapirc
+.env
+*.key
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.bak
+*.backup
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# Model checkpoints (if PINN training added)
+models/checkpoints/
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Large archives
+*.zip
+*.tar.gz
+*.rar
